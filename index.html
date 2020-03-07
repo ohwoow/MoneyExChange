@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <title>MoneyExChange</title>
+</head>
+<body>
+
+    <!--*Header-->
+
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+
+                <div class="header__logo">
+                    <img src="image/logo.png" alt="">
+                    <span class="logo__text"><b>MoneyEx</b>Change</span>
+                </div>
+                
+                <div class="nav__site">
+                    <a href="#" class="nav__link">Компания</a>
+                    <a href="#" class="nav__link">Блог</a>
+                    <a href="#" class="nav__link">Контакты</a>
+                </div>
+
+                <div class="nav__user">
+                    <a href="#" class="nav__link">Вход</a>
+                    <a href="#" class="user__link">Регистрация</a>
+                </div>
+
+
+                    <nav class="nav__site--mobile">
+                    <a href="#" class="nav__link--mobile">Компания</a>
+                    <a href="#" class="nav__link--mobile">Блог</a>
+                    <a href="#" class="nav__link--mobile">Контакты</a>
+               
+                    <a href="#" class="nav__link--mobile">Вход</a>
+                    <a href="#" class="user__link--mobile">Регистрация</a>
+                    </nav>
+               
+
+                <button class="nav__toggle">
+                    <span class="nav__toggle__item">Menu</span>
+                </button>
+            </div> <!--/header__inner-->
+    </div>
+    </header>
+    
+    <!--*Intro-->
+
+    <section class="intro">
+        <div class="container--intro">
+
+            <div class="intro__header">
+                <h1 class="intro__title">Мультивалютный обменный сервис 24/7</h1>
+                <div class="intro__subtitle">Быстрый обмен без скрытых комиссий</div>
+            </div>
+
+            <div class="exchange">
+                <div class="exchange__inner">
+                    <div class="exchange__wrapper">
+
+                        <div class="exchange__side">
+                            <div class="exchange__title">Вы отдаёте</div>
+                            <form action="/" method="POST" class="form">
+                                <div class="form__side">
+                                    <div class="form__input">
+                                        <label for="amount" class="label">Сумма</label>
+                                        <input type="text" id="amount" class="form__input__amount" value="1000.00"  onkeyup="this.value = this.value.replace(/[^\d]/g,'');">
+                                        
+                                    </div>
+                                    <div class="form__select">
+                                    <img src="image/sber.png" alt="Sberbank"class="select__img"> 
+                                        <span class="select__rub">RUB</span>
+                                    </div>
+                                    <div class="arrows"></div>
+                                </div><!--/form__leftSidee-->
+                            </form>
+                        </div> <!--/exchange__leftSide-->
+
+                        <div class="exchange__side">
+                            <div class="exchange__title">Вы получите
+                                <small class="exchange__small">с учётом комиссии ПС (0,5%)</small>
+                            </div>
+                            <form action="/" method="POST" class="form">
+                                <div class="form__side">
+                                    <div class="form__input">
+                                        <label for="amount" class="label">Сумма</label>
+                                        <input type="text" id="amount" class="form__input__amount" value="950.00"  onkeyup="this.value = this.value.replace(/[^\d]/g,'');">
+                                    </div>
+                                    <div class="form__select">
+                                    <img src="image/yndx.png" alt="Sberbank" class="select__img"> 
+                                        <span class="select__rub">RUB</span>
+                                    </div>
+                                </div><!--/form__leftSidee-->
+                            </form>
+                         </div> <!--/exchange__leftSide-->
+                    </div>  <!--/exchange__wrapper-->
+                </div> <!--/exchange__inner-->
+                <div class="exchange__btn">
+                    <button class="btn" type="submit">Обменять</button>
+                </div>
+            </div> <!--/exchange-->
+
+        </div> <!--/container-->
+    </section>
+
+    <!--*features-->
+
+    <section class="features">
+        <div class="container">
+            <div class="features__list">
+                <div class="features__safety">
+                    <img src="image/safety.png" width="147" height="162" alt="" class="features__img">
+                    <h3 class="features__title">Безопасная сделка</h3>
+                    <div class="features__text">
+                        Усиленная безопасность ваших обменов, усиленная безопасность от мошенников!
+                    </div>
+                </div>
+
+                <div class="features__referral">
+                    <img src="image/referral.png" width="169" height="162" alt="" class="features__img">
+                    <h3 class="features__title">Реферальная система</h3>
+                    <div class="features__text">
+                        На сервисе работает партнерская программа, 
+                        за каждый обмен приведенного вами клиента, вы получаете 0.5% с нашей прибыли.
+                    </div>
+                </div>
+
+                <div class="features__support">
+                    <img src="image/support.png" width="153" height="153" alt="" class="features__img">
+                    <h3 class="features__title">Онлайн поддержка</h3>
+                    <div class="features__text">
+                        Четыре вида поддержки для наших клиентов: 
+                        Телеграмм канал, E-mail поддержка, и мобильный номер (Viber).
+                    </div>
+                </div>
+
+            </div> <!--/features__list-->
+        </div> <!--/contaienr-->
+    </section>
+
+    <!--*About-->
+
+
+    <section class="about">
+        <div class="container--big">
+            <div class="about__wrapper">
+                <div class="about__info">
+                    <h2 class="info__title">
+                        Сервис обмена электронных
+                            валют с 5-летней историей
+                    </h2>
+                    <div class="info__text">
+                        За время работы мы приобрели репутацию 
+                        проверенного партнера и делаем все возможное, 
+                        чтобы ваши впечатления от нашего сервиса были только благоприятными.
+                    </div>
+                </div>
+                <div class="about__photo">
+                    <img src="image/photo-money.png" alt="" class="about__img">
+                </div>
+            </div>
+        </div> <!--/container-->
+    </section>
+
+    <!--*Reserve-->
+
+    <section class="reserve">
+        <div class="container">
+            <h1 class="reserve__header">Резерв валюты</h1>
+                <div class="reserve__row">
+                    <div class="reserve__item">
+                        <div class="item__img">
+                            <img src="image/yandex-reserve.png" alt="">
+                        </div>
+                        <div class="item__info">
+                            <span class="item__name">Yandex RUB</span>
+                            <span class="item__value">900549</span>
+                        </div>
+                    </div>
+                    <div class="reserve__item">
+                        <div class="item__img">
+                            <img src="image/ethereum.png" alt="">
+                        </div>
+                        <div class="item__info">
+                            <span class="item__name">Ethereum ETH</span>
+                            <span class="item__value">123</span>
+                        </div>
+                    </div>
+                    <div class="reserve__item">
+                        <div class="item__img">
+                            <img src="image/bitcoin.png" alt="">
+                        </div>
+                        <div class="item__info">
+                            <span class="item__name">Bitcoin BTC</span>
+                            <span class="item__value">0.63333439</span>
+                        </div>
+                    </div>
+                    <div class="reserve__item">
+                        <div class="item__img">
+                            <img src="image/sber-reserve.png" alt="">
+                        </div>
+                        <div class="item__info">
+                            <span class="item__name">Сбербанк  RUB</span>
+                            <span class="item__value">142666</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reserve__row">
+                    <div class="reserve__item">
+                        <div class="reserve__item">
+                            <div class="item__img">
+                                <img src="image/privat.png" alt="">
+                            </div>
+                            <div class="item__info">
+                                <span class="item__name">Приват 24 UAH</span>
+                                <span class="item__value">142666</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reserve__item">
+                        <div class="reserve__item">
+                            <div class="item__img">
+                                <img src="image/paypal.png" alt="">
+                            </div>
+                            <div class="item__info">
+                                <span class="item__name">PayPal USD</span>
+                                <span class="item__value">5139.58</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reserve__item">
+                        <div class="reserve__item">
+                            <div class="item__img">
+                                <img src="image/pm.png" alt="">
+                            </div>
+                            <div class="item__info">
+                                <span class="item__name">PM USD</span>
+                                <span class="item__value">3192.22</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reserve__item">
+                        <div class="reserve__item">
+                            <div class="item__img">
+                                <img src="image/qiwi.png" alt="">
+                            </div>
+                            <div class="item__info">
+                                <span class="item__name">Qiwi RUB</span>
+                                <span class="item__value">99243.321</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div> <!--reserve__row-->
+            </div> <!--container-->
+        </section>
+
+        <!--Reviews-->
+
+        <section class="reviews">
+            <div class="container--big">
+                <h1 class="reviews__title">Что клиенты говорят о нас</h1>
+                <div data-slider></div>
+                <div class="reviews__content">
+                    <div class="reviews__text">
+                        <p class="text">
+                            Киви переправил деньги не на кошелек а на 
+                            номер мтс будьте внимательны.даже в этом случаи 
+                            делают возврат и переводят на приват.
+                            особая благодарность оператору Марии.
+                        </p>
+                    </div>
+
+                    <div class="reviews__text reviews__text--next">
+                                <p class="text">
+                                    3-й раз выполняю обмен. все как всегда на отлично! 
+                                    транзакции выполняются в течение 15-20 мин.
+                                    что очень быстро + лучший ценник!
+                                </p>    
+                            </div>       
+                        </div>   <!--/reviews__content-->   
+
+                            <div class="reviews__info">
+                                <div class="info__left">
+                                    <span class="reviews__author">Jacob Robertson</span>
+                                    <time class="reviews__time" datetime="22.02.2019">22.02.2019, 15:10</time>
+                                </div>
+                                <div class="info__right">
+                                    <span class="reviews__author reviews__author--next">Morris Robertson</span>
+                                    <time class="reviews__time reviews__time--next" datetime="22.02.2019">22.02.2019, 15:10</time>
+                                </div>
+                            </div>
+                            ===
+                            <div class="slider">
+                                <button type="button" class="button button__prev"><img src="image/arrow-prev.png" alt=""></button>
+                                <button type="button" class="button button__next"><img src="image/arrow-next.png" alt=""></button>
+                            </div>
+                        </div>    
+                    </div> <!--/container--big-->
+                </section>
+
+                
+                <!--trade-->
+
+                <section class="trade">
+                    <div class="container--big">
+                        <div class="trade__wrapper">
+                           <div class="trade__content"> 
+                                <h3 class="trade__title">
+                                    Будем рады предоставить Вам 
+                                    качественный обмен валют на нашем сервисе!
+                                </h3>
+                                <div class="trade__text">Начните обмен прямо сейчас</div>
+                                <button class="btn btn__trade" type="button">Начать обмен</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <footer class="footer">
+                    <div class="container--big">
+                        <div class="footer__content">
+                            <div class="header__logo">
+                                <img src="image/logo.png" alt="">
+                                <span class="logo__text"><b>MoneyEx</b>Change</span>
+                                <div class="footer__subtitle">Сервис обмена электронных валют</div>
+                            </div>
+
+                            <div class="footer__nav">
+                                <a href="#" class="footer__nav-link">Карта сайта</a>
+                                <a href="#" class="footer__nav-link">Предупреждение</a>
+                                <a href="#" class="footer__nav-link">Правила сайта</a>
+                                <a href="#" class="footer__nav-link">Обмен</a>
+                            </div>
+
+                            <div class="footer__social">
+                                <a href="#" class="social__img"> <img src="image/vk.png" alt=""> </a>
+                                <a href="#" class="social__img"> <img src="image/facebook.png" alt=""> </a>
+                                <a href="#" class="social__img"> <img src="image/instagram.png" alt=""> </a>     
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                
+                    <script src="js/script.js"></script>
+</body>
+</html>
